@@ -19,9 +19,9 @@ MonoBehaviour:
   smoothAmount: 0
   clearAmount: 74
   interval: 4
-  minPathWidth: 13
+  minPathWidth: 10
   maxPathWidth: 15
-  maxPathChange: 2
+  maxPathChange: 3
   roughness: 100
   windyness: 0
   edgesAreWalls: 1

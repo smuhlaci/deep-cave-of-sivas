@@ -16,7 +16,7 @@ public class DialogButton : MonoBehaviour
     public void Setup(string buttonText, string buttonEvent, UnityAction buttonClickedCallback)
     {
         _text.text = buttonText;
-        _button.onClick.AddListener(() => { FindObjectOfType<GameManager>().ButtonPressed(buttonEvent); });
+        _button.onClick.AddListener(() => {GameManager.Instance.ButtonPressed(buttonEvent); });
         _button.onClick.AddListener(buttonClickedCallback);
 
         _button.interactable = true;

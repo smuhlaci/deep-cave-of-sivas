@@ -33,6 +33,12 @@ public class DialogPanel : MonoBehaviour
 
     public void Setup(Dialog dialog)
     {
+        if (_currentDialog != null)
+        {
+            Debug.LogError("A dialog still on going...");
+            return;
+        }
+        
         _currentDialog = dialog;
         _currentDialogIndex = -1;
         _waitingForInteraction = false;
@@ -43,6 +49,8 @@ public class DialogPanel : MonoBehaviour
     private void Hide()
     {
         _currentDialog = null;
+        
+        ClearButtons();
 
         SetActive(false);
     }
@@ -101,6 +109,14 @@ public class DialogPanel : MonoBehaviour
         if (active)
         {
             Next();
+        }
+    }
+
+    private void ClearButtons()
+    {
+        foreach (Transform child in _interactionButtonsParent)
+        {
+            Destroy(child.gameObject);
         }
     }
 }

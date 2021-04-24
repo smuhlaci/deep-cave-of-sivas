@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534e5b7a8343845c9b6bc0aad8aee3f6, type: 3}
   m_Name: Welcome Message
   m_EditorClassIdentifier: 
-  message:
+  Messages:
   - Welcome!
   - You are in Sivas.
   - There is a cave with full of gold,
   - Muslim village think the gold in that cavern is haram.
-  - What do you say?
+  - '%What do you say?% %It''s Bullshit% %They are right%'
+  ActionName:
+  - It's Bullshit
+  - They are right

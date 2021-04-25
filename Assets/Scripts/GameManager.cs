@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DialogPanel _dialogPanel;
 
     [SerializeField] private Image _fade;
+
+    public Vector2 DestroyPosition;
     
     public static GameManager Instance;
     

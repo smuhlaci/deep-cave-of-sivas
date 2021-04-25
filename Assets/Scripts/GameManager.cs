@@ -54,7 +54,12 @@ public class GameManager : MonoBehaviour
             case "They are right":
                 Debug.Log(text);
                 break;
-                // break;
+            case "LookingForMine":
+                Debug.Log("Fuck off!");
+                break;
+            case "JustPassing":
+                Debug.Log("DamnLurkers!");
+                break;
         }
     }
 }

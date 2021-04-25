@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e5b7a8343845c9b6bc0aad8aee3f6, type: 3}
+  m_Name: MineStory
+  m_EditorClassIdentifier: 
+  Messages:
+  - Welcome!
+  - "Once upon a time, there was a village located in Sivas, Turkey, which  called
+    Alt\u0131nl\u0131 for the village with gold"
+  - The village was called that because of a story of a gold mine in there
+  - "According to the elders of Alt\u0131nl\u0131, this cave had tons of gold in
+    it and whoever enters the mine and mines the gold has been cursed, and cursed
+    the entire village within themselves."
+  - No one knows where the mine is and the accuracy of the legend is unclear
+  - As a treasure hunter, you have found a map that has the entrance of this secret
+    mine
+  - Your goal is to find the mine and collect the gold as much as possible
+  - "While doing that, you will be staying in Alt\u0131nl\u0131 village, and figure
+    out why it is called a cursed mine."
+  - '%What are you gonna do?% %Open Map% %Leave Town%'
+  ActionName:
+  - ' OpenMap'
+  - LeaveTown

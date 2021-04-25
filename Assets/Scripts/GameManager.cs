@@ -1,4 +1,7 @@
+using System;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,11 +9,20 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private DialogPanel _dialogPanel;
 
+    [SerializeField] private Image _fade;
+    
     public static GameManager Instance;
     
     private void Awake()
     {
+        _fade.color = new Color(0, 0, 0, 1);
         Instance = this;
+    }
+
+    private void Start()
+    {
+        _fade.DOFade(0, .5F);
+        AudioManager.Instance.Play("VillageIdle");
     }
 
     private void Update()

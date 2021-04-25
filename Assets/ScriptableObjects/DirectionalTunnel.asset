@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0de5f86776526048983d4539cefdc39, type: 3}
   m_Name: DirectionalTunnel
   m_EditorClassIdentifier: 
-  algorithm: 9
+  algorithm: 2
   randomSeed: 1
   seed: 0
   fillAmount: 0
   smoothAmount: 0
   clearAmount: 74
   interval: 4
-  minPathWidth: 10
-  maxPathWidth: 15
-  maxPathChange: 3
-  roughness: 100
+  minPathWidth: 3
+  maxPathWidth: 6
+  maxPathChange: -4
+  roughness: 0
   windyness: 0
   edgesAreWalls: 1
-  modifier: 0.05
+  modifier: 0.2
